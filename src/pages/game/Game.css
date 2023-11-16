@@ -1,0 +1,137 @@
+.container_game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--detail-color-one);
+}
+
+.box_game {
+    background-color: var(--black);
+    border-radius: 1rem;
+    width: 50vw;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.box_color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.primary_layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.secondary_layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.detail_game {
+    position: absolute;
+    background-color: var(--black);
+    display: flex;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blue {
+    background-color: var(--blue);
+    border-radius: 1rem 0 0 0;
+    border-right: 10px solid var(--black);
+}
+
+.red {
+    background-color: var(--red);
+    border-radius: 0 1rem 0 0;
+}
+
+.yellow {
+    background-color: var(--yellow);
+    border-radius: 0 0 0 1rem;
+    border-top: 10px solid var(--black);
+    border-right: 10px solid var(--black);
+}
+
+.green {
+    background-color: var(--green);
+    border-radius: 0 0 1rem 0;
+    border-top: 10px solid var(--black);
+    cursor: pointer;
+}
+
+
+.blue.active {
+    transition: 0.5s;
+    box-shadow:
+        inset 0 0 50px #14a0e0,
+        inset 20px 0 50px #40afe2,
+        inset -20px 0 50px #70B7BA,
+        inset 20px 0 150px #40afe2,
+        inset -20px 0 300px #70B7BA,
+        0 0 20px #14a0e0,
+        -10px 0 80px #40afe2,
+        10px 0 80px #70B7BA;
+}
+
+.green.active {
+    transition: 0.5s;
+    box-shadow:
+        inset 0 0 50px #5bd82a,
+        inset 20px 0 50px #77cf54,
+        inset -20px 0 50px #A9CF54,
+        inset 20px 0 150px #77cf54,
+        inset -20px 0 300px #A9CF54,
+        0 0 20px #5bd82a,
+        -10px 0 80px #77cf54,
+        10px 0 80px #A9CF54;
+}
+
+.yellow.active {
+    transition: 0.5s;
+    box-shadow:
+        inset 0 0 50px #eecd0f,
+        inset 20px 0 50px #d8c248,
+        inset -20px 0 50px #F7E967,
+        inset 20px 0 150px #d8c248,
+        inset -20px 0 300px #F7E967,
+        0 0 20px #eecd0f,
+        -10px 0 80px #d8c248,
+        10px 0 80px #F7E967;
+}
+
+.red.active {
+    transition: 0.5s;
+    box-shadow:
+        inset 0 0 30px #f02323,
+        inset 20px 0 50px #e7211e,
+        inset -20px 0 50px #F1433F,
+        inset 20px 0 150px #e7211e,
+        inset -20px 0 300px #F1433F,
+        0 0 20px #f02323,
+        -10px 0 80px #e7211e,
+        10px 0 80px #F1433F;
+}
