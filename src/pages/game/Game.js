@@ -50,15 +50,15 @@ function Game() {
     const checkSequence = (userSequence) => {
         for (let i = 0; i < userSequence.length; i++) {
             if (userSequence[i] !== sequence[i]) {
+                setUserSequence([])
+                setScore(0)
+                generateSequence()
                 Swal.fire({
                     title: "Você errou! Tente novamente!",
                     showConfirmButton: false,
                     timer: 1000,
                     icon: "error",
                 });
-                setUserSequence([])
-                setScore(0)
-                generateSequence()
             } else {
                 Swal.fire({
                     title: `Parabéns! Você acertou! ${score}`,
