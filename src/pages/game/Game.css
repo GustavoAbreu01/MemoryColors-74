@@ -1,6 +1,5 @@
 .container_game {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -13,10 +12,30 @@
     border-radius: 1rem;
     width: 50vw;
     height: 80vh;
+    min-width: 500px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+
+.score_game {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    top: 5%;
+    right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-family: Londrina;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    color: var(--detail-color-three);
+    background-color: var(--secondary-color);
 }
 
 .box_color {
@@ -58,6 +77,32 @@
     border-radius: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.btn_start {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-family: Londrina;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    color: var(--detail-color-three);
+    background-color: var(--secondary-color);
+}
+
+.btn_start:active {
+    transition: 0.5s;
+    color: var(--detail-color-three);
+    background-color: var(--detail-color-two);
 }
 
 .blue {
