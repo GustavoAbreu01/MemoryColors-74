@@ -60,14 +60,31 @@ function Game() {
                     showConfirmButton: false,
                     timer: 1000,
                     icon: "error",
+                    background: "#4b3832",
+                    color: "#fff",
                 });
-                break
+                setTimeout(() => {
+                    window.location.reload()
+                }, 1000)
             } else {
                 Swal.fire({
                     title: `Parabéns! Você acertou! ${score + 1}`,
                     showConfirmButton: false,
-                    timer: 1000,
-                    icon: "success"
+                    confirmButtonText: 'Ir para o carrinho',
+                    confirmButtonColor: 'var(--blue-primary)',
+                    position: 'bottom-end',
+                    background: "#4b3832",
+                    color: "#fff",
+                    timer: 2000,
+                    timerProgressBar: true,
+                    toast: true,
+                    width: 400,
+                    showClass: {
+                      popup: 'animate__animated animate__backInRight'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__backOutRight'
+                    },
                 });
                 setScore(score + 1)
             }
@@ -81,7 +98,10 @@ function Game() {
             confirmButtonColor: "#be9b7b",
             confirmButtonText: "Iniciar",
             background: "#4b3832",
+            width: 600,
+            height: 100,
             color: "#fff",
+
         }).then((result) => {
             if (result.isConfirmed) {
                 generateSequence();
