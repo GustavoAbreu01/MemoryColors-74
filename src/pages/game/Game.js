@@ -59,6 +59,7 @@ function Game() {
                     timer: 1000,
                     icon: "error",
                 });
+                break
             } else {
                 Swal.fire({
                     title: `Parabéns! Você acertou! ${score}`,
@@ -79,13 +80,13 @@ function Game() {
         <div className='container_game'>
             <div className='box_game'>
                 <div className='primary_layer'>
-                    <div onClick={() => colorSequence("blue")} className='box_color blue'></div>
-                    <div onClick={() => colorSequence("red")} className='box_color red'></div>
+                    <div onClick={() => colorSequence("blue")} className='box_color blue'>Azul</div>
+                    <div onClick={() => colorSequence("red")} className='box_color red'>Vermelho</div>
                 </div>
                 <div className='detail_game'></div>
                 <div className='secondary_layer'>
-                    <div onClick={() => colorSequence("yellow")} className='box_color yellow'></div>
-                    <div onClick={() => colorSequence("green")} className='box_color green'></div>
+                    <div onClick={() => colorSequence("yellow")} className='box_color yellow'>Amarelo</div>
+                    <div onClick={() => colorSequence("green")} className='box_color green'>Verde</div>
                 </div>
             </div>
         </div>

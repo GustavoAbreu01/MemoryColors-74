@@ -25,6 +25,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-family: Londrina;
+    font-size: 3rem;
     width: 50%;
     height: 100%;
     transition: 0.5s;
@@ -62,11 +64,13 @@
     background-color: var(--blue);
     border-radius: 1rem 0 0 0;
     border-right: 10px solid var(--black);
+    color: var(--black-transparent);
 }
 
 .red {
     background-color: var(--red);
     border-radius: 0 1rem 0 0;
+    color: var(--black-transparent);
 }
 
 .yellow {
@@ -74,6 +78,7 @@
     border-radius: 0 0 0 1rem;
     border-top: 10px solid var(--black);
     border-right: 10px solid var(--black);
+    color: var(--black-transparent);
 }
 
 .green {
@@ -81,11 +86,13 @@
     border-radius: 0 0 1rem 0;
     border-top: 10px solid var(--black);
     cursor: pointer;
+    color: var(--black-transparent);
 }
 
 
 .blue.active {
     transition: 0.5s;
+    color: #14a0e0;
     box-shadow:
         inset 0 0 50px #14a0e0,
         inset 20px 0 50px #40afe2,
@@ -99,6 +106,7 @@
 
 .green.active {
     transition: 0.5s;
+    color: #5bd82a;
     box-shadow:
         inset 0 0 50px #5bd82a,
         inset 20px 0 50px #77cf54,
@@ -112,6 +120,7 @@
 
 .yellow.active {
     transition: 0.5s;
+    color: #eecd0f;
     box-shadow:
         inset 0 0 50px #eecd0f,
         inset 20px 0 50px #d8c248,
@@ -125,6 +134,7 @@
 
 .red.active {
     transition: 0.5s;
+    color: #f02323;
     box-shadow:
         inset 0 0 30px #f02323,
         inset 20px 0 50px #e7211e,
